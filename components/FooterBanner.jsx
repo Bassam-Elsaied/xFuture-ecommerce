@@ -38,7 +38,7 @@ function FooterBanner({ footerBanner, locale }) {
               : footerBanner.midText_ar}
           </h3>
           <p>{locale === "en" ? footerBanner.desc_en : footerBanner.desc_ar}</p>
-          <Link href={`/product/${footerBanner.product}`}>
+          <Link href={`/${locale}/product/${footerBanner.product_en}`}>
             <Button className="hover:bg-white">
               {locale === "en"
                 ? footerBanner.buttonText_en
